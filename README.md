@@ -6,13 +6,13 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://www.mit.edu/~amini/LICENSE.md)
 [![Prize Pool](https://img.shields.io/badge/Prize%20Pool-$50,000-gold)](https://www.kaggle.com/competitions/neurips-open-polymer-prediction-2025/)
 
-## 🎯 Competition Overview
+##  Competition Overview
 
 Can your model unlock the secrets of polymers? This competition challenges participants to predict fundamental polymer properties to accelerate sustainable materials research. Polymers are essential building blocks in medicine, electronics, and sustainability, but progress has been limited by the lack of accessible, high-quality data.
 
 This competition introduces a **game-changing, large-scale open-source dataset** – ten times larger than any existing resource – to unlock the vast potential of sustainable materials through machine learning.
 
-## 🧪 Problem Statement
+##  Problem Statement
 
 Your mission is to predict a polymer's real-world performance directly from its chemical structure. Given a polymer's structure as a SMILES (Simplified Molecular Input Line Entry System) string, build a model that accurately forecasts **five key properties**:
 
@@ -35,7 +35,7 @@ Your mission is to predict a polymer's real-world performance directly from its 
 
 All ground truth values are derived from **molecular dynamics simulation** averages.
 
-## 🗂️ Dataset Structure
+##  Dataset Structure
 
 ```
 dataset/
@@ -59,7 +59,7 @@ dataset/
 - Required format: `id,Tg,FFV,Tc,Density,Rg`
 - All predictions must be provided for each test sample
 
-## 📊 Evaluation Metric
+##  Evaluation Metric
 
 The competition uses **weighted Mean Absolute Error (wMAE)** across all five properties:
 
@@ -72,15 +72,15 @@ Where the weighting factor ensures:
 - **Inverse square-root scaling**: Rare properties get higher weights
 - **Weight normalization**: Total weight across all properties equals K (number of tasks)
 
-## 🏆 Prizes & Timeline
+##  Prizes & Timeline
 
 ### Prize Pool: $50,000
-- 🥇 **1st Place**: $12,000
-- 🥈 **2nd Place**: $10,000  
-- 🥉 **3rd Place**: $10,000
-- 🏅 **4th Place**: $8,000
-- 🏅 **5th Place**: $5,000
-- 🎓 **Top Student Group**: $5,000
+-  **1st Place**: $12,000
+-  **2nd Place**: $10,000  
+-  **3rd Place**: $10,000
+-  **4th Place**: $8,000
+-  **5th Place**: $5,000
+-  **Top Student Group**: $5,000
 
 ### Key Dates
 - **Start**: June 16, 2025
@@ -89,7 +89,7 @@ Where the weighting factor ensures:
 - **Final Submission**: September 15, 2025
 - *All deadlines at 11:59 PM UTC*
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -124,7 +124,7 @@ submission = pd.DataFrame({
 submission.to_csv('submission.csv', index=False)
 ```
 
-## 🔬 Approach Ideas
+##  Approach Ideas
 
 ### Feature Engineering
 - **Molecular Descriptors**: Extract chemical features from SMILES
@@ -143,7 +143,7 @@ submission.to_csv('submission.csv', index=False)
 - **Multi-scale Targets**: Properties have vastly different ranges
 - **Chemical Validity**: Ensure SMILES parsing and validation
 
-## 📚 Useful Resources
+##  Useful Resources
 
 ### Chemical Informatics
 - [SMILES Notation](https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System)
@@ -159,11 +159,11 @@ submission.to_csv('submission.csv', index=False)
 - [Graph Neural Networks for Chemistry](https://github.com/deepchem/deepchem)
 - [Molecular Property Prediction](https://arxiv.org/abs/1609.02907)
 
-## 🏛️ Competition Host
+##  Competition Host
 
 **University of Notre Dame**
 
-## 📜 Citation
+##  Citation
 
 ```bibtex
 @misc{neurips-polymer-2025,
@@ -175,7 +175,7 @@ submission.to_csv('submission.csv', index=False)
 }
 ```
 
-## 📊 Competition Stats
+##  Competition Stats
 
 - **Entrants**: 535
 - **Active Participants**: 18  
